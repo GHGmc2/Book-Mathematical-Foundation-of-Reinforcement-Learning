@@ -1,4 +1,6 @@
-## Ref
+
+
+Ref
 
  - [Third-party code and materials](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning#third-party-code-and-materials)
 
@@ -6,7 +8,9 @@
 
 
 
-## [30分钟了解强化学习的名词脉络](https://www.bilibili.com/video/BV1r3411Q7Rr)
+## Overview
+
+- [30分钟了解强化学习的名词脉络](https://www.bilibili.com/video/BV1r3411Q7Rr)
 
 <img src="https://discuss.pytorch.kr/uploads/default/original/2X/b/bba5e3967b5de4634194ee2554d4f6a81709f0f1.jpeg" width=700>
 
@@ -97,12 +101,11 @@
     \min_w J(w) = \mathbb E[v_{\pi}(S) - \hat v (S, w)]
     $$
     
-
-  - Sarsa with VFA
-
-  - Q-learning with VFA
-
-  - Deep Q-learning (DQN)
+- Sarsa with VFA
+  
+- Q-learning with VFA
+  
+- Deep Q-learning (DQN)
 
 
 
@@ -115,13 +118,11 @@
     J(\theta) = \bar v_{\pi}, \bar r_{\pi}
     $$
     
-
   - Policy gradient:
     $$
     \nabla J(\theta) = \mathbb E[\nabla_{\theta} \ln \pi(A | S, \theta)q_{\pi}(S, A)]
     $$
     
-
   - Gradient-ascent algorithms (REINFORCE):
     $$
     \theta_{t + 1} = \theta_t + \alpha \nabla_{\theta} \ln \pi (a_t | s_t, \theta_t)q_t(s_t, a_t)
