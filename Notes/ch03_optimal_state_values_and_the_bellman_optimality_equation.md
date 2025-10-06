@@ -49,7 +49,7 @@
 
   - where $a^* = \text{argmax}_a q(s, a)$
 
-- The optimal policy $\pi(s)$ is the one that selects the action that has the greatest value of $q(s,a)$.
+- Greedy policy: the optimal policy $\pi(s)$ is the one that selects the action that has the greatest value of $q(s,a)$.
 
 
 
