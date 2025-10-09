@@ -23,17 +23,18 @@
      \end{cases}, \text{ where } a^*_k(s) = \text{argmax}_a q_k(a, s)
      $$
      
-
   2. Value update: $v_{k+1}(s) = \sum_a \pi_{k+1}(a|s) q_k(s,a), s \in \mathcal S$. Since $\pi_{k+1}$ is greedy, it's simply
      $$
      v_{k+1}(s) = \max_a q_k(a,s)
      $$
-
+  
 - Procedure: $v_k(s) \rightarrow q_k(s, a) \rightarrow \text{greedy policy } \pi_{k+1}(a|s) \rightarrow \text{new value } [v_{k+1} = \max_a q_k(s, a)]$
 
 -  Value iteration algorithm:
 
   <img src="./img/value_iter.png" width=800 align="left">
+
+<br>
 
 
 
@@ -96,6 +97,8 @@
 
   <img src="./img/policy_iter.png" width=800, align=left>
 
+<br>
+
 
 
 ## Truncated policy iteration
@@ -104,13 +107,16 @@
 
 - compare the steps:
 
-  <img src="./img/policy_value_iter.png" width=1000, align=left>
-
   - They start from the same initial condition.
   - The first three steps are the same.
   - The 4th step becomes diﬀerent:
     - policy iteration requires an iterative algorithm (an infinite number of iterations)
     - value iteration is a one-step iteration.
+  
+  
+  <img src="./img/policy_value_iter.png" width=1000, align=left>
+
+<br>
 
 
 
@@ -119,4 +125,6 @@
 - Truncated policy iteration algorithm:
 
   <img src="./img/trunc_policy_iter.png" width=900, align=left>
+
+<br>
 

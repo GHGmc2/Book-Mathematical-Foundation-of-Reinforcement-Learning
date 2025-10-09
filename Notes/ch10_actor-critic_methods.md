@@ -87,6 +87,8 @@
 
   <img src="./img/off-policy_actor-critic.png" width=800, align=left>
 
+<br>
+
 
 
 ## Deterministic actor-critic (DPG)
